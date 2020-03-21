@@ -9,3 +9,4 @@ ToDo:
 - Use some kind of templating or PHP for reusable code
 - Add tiles wih image background for groups
 - Implement some user athentification logic
+- Add Google Map API Stuff
