@@ -10,3 +10,4 @@ ToDo:
 - Add tiles wih image background for groups
 - Implement some user athentification logic
 - Add Google Map API Stuff
+- Make landing page one of those scroll for content types
