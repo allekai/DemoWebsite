@@ -1,28 +1,26 @@
-package com.example.servingwebcontent;
+package com.example.servingwebcontent.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@Controller
-public class GreetingController {
+import com.sun.tools.javac.util.List;
 
-	@GetMapping("/greeting")
-	public String greeting(@RequestParam(name="name", required=false, defaultValue="Admin") String name, Model model) {
+@Controller
+public class HomeController {
+	
+	@GetMapping("/")
+	public String greeting(@RequestParam(name="name", required=false, defaultValue="Unknown") String name, Model model) {
 		model.addAttribute("name", name);
-		return "nav/greeting";
+		return "home";
 	}
 	
-	@GetMapping("/gruppen")
-	public String gruppen(@RequestParam(name="group", required = false, defaultValue = "Adler") String group, Model model) {
-		model.addAttribute("group", group);
-		return "nav/gruppen";
+	@GetMapping("/home")
+	public String home(@RequestParam(name="name", required=false, defaultValue="Unknown") String name, Model model) {
+		model.addAttribute("name", name);
+		return "redirect:/";
 	}
-		
-	@GetMapping("/fahrten")
-	public String fahrten(@RequestParam(name="fahrt", required = false, defaultValue = "Sofa2020") String fahrt, Model model) {
-		model.addAttribute("fahrt", fahrt);
-		return "nav/fahrten";
-	}
+
 }
