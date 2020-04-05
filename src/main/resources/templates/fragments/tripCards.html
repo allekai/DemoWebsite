@@ -1,0 +1,10 @@
+ <th:block th:fragment="tripCards" th:each="trip: ${trips}">	 
+	 <div class="card" style="width: 18rem;">
+	  	<img class="card-img-top" src="..." th:src="@{'/img/' + ${#strings.toLowerCase(trip)} + '.jpg'}" alt="Card image cap">
+	   	<div class="card-body">
+	    	<h5 class="card-title" th:text="${trip}"></h5>
+	     	<p class="card-text">Lorem ipsum.</p>
+	     	<a th:href="@{'/gruppen/' + ${#strings.toLowerCase(trip)}}" class="btn btn-primary">Mehr lesen</a>
+	   </div>
+	 </div>
+ </th:block>

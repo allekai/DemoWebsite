@@ -4651,6 +4651,12 @@ input[type="button"].btn-block {
   text-decoration: none;
 }
 
+.navbar-brand>img {
+  height: 100px;
+  padding: 5px; /* firefox bug fix */
+  width: auto;
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;

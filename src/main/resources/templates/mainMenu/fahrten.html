@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <title>Hello, world!</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <title>Fahrten</title>
   </head>
   <body>
 
     <div th:replace="fragments/navbar :: navbar"></div>
 
-    <h1 th:text="'Fahrt ' + ${fahrt} + ' :)'">Hello, world!</h1>
+        <!-- CONTENT -->
+    <div class="mx-auto w-75">
+      <h1>Unsere Fahrten im Überblick</h1>
 
+
+      <!-- CARDS SECTION -->
+      <div class="card-deck">
+
+        <div th:replace="fragments/tripCards :: tripCards"></div>
+        
+      </div>
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

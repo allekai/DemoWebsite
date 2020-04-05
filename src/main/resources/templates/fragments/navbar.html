@@ -1,6 +1,6 @@
 <div th:fragment="navbar">	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navigation</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="/home"><img src="/img/navLogo_thumbnail.png"/></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -8,7 +8,6 @@
         <div class="navbar-collapse collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
 				<li th:each="entry : ${menuEntries}" class="nav-link">
-					<!-- TODO AP: Add link color for link of currently displayed site-->
 					<a th:href="@{'/' + ${entry}}" th:text="${#strings.capitalize(entry)}"></a>
 				</li>
             </ul>

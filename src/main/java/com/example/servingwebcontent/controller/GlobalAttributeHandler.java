@@ -18,5 +18,17 @@ public class GlobalAttributeHandler {
 		List<String> ret = List.of("home", "gruppen", "fahrten");
 		return ret;
 	}
+	
+	@ModelAttribute("groups")
+	public List<String> groups() {
+		List<String> ret = List.of("Adler", "Grizzlys", "Orcas");
+		return ret;
+	}
+	
+	@ModelAttribute("trips")
+	public List<String> trips() {
+		List<String> ret = List.of("Sommerfahrt", "Winterfahrt", "Frühjahrsfahrt");
+		return ret;
+	}
 
 }

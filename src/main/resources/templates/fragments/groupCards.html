@@ -1,0 +1,10 @@
+ <th:block th:fragment="groupCards" th:each="group : ${groups}">	 
+	 <div class="card" style="width: 18rem;">
+	  	<img class="card-img-top" src="..." th:src="@{'/img/' + ${#strings.toLowerCase(group)} + '.jpg'}" alt="Card image cap">
+	   	<div class="card-body">
+	    	<h5 class="card-title" th:text="${group}"></h5>
+	     	<p class="card-text">Lorem ipsum.</p>
+	     	<a th:href="@{'/gruppen/' + ${#strings.toLowerCase(group)}}" class="btn btn-primary">Mehr lesen</a>
+	   </div>
+	 </div>
+ </th:block>
