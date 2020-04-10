@@ -12,10 +12,11 @@ ToDo:
 - Thymeleaf Templating
 	- ~~Dynamic Navbar~~
 	- Dynamic Navbar link colorization (current link should be colored)
-		- preferably without JS
+		- probably needs JS... But do we need this at all? Many Websites don't use it
 		- Otherwise: Use Breadcrumbs to show where we are
-	- ~~Add WM Logo [1]~~
 	- Contacts: Utilize user database for automatic updates to the website
+	- Add favicon
+	- ~~Add WM Logo [1]~~
 		- Name, Age, Mail adress, Phone Number, etc. [4]
 - **Proper and secure handling of requests**
 - Add cards as links to subpages
@@ -24,26 +25,37 @@ ToDo:
 		- ~~incorporate scout groups patron animal [6]~~
 		- Maybe via mouse-over effect on the tiles? First you see the animal, then the group
 	- ~~for trips~~
-- User Management
-	- Database
-	- User Model / Data Model
-	- Athentification logic
+
 - Add Google Map API Stuff
 - Make landing page one of those scroll for content types
-	- Maybe with parallax effect?
+	-         Maybe with parallax effect?
 - Calendar function
 	- fixes [3]
 	- calendar export
 	- calendar sync
 - Image gallery
-	- fixes [5]
+	-         fixes [5]
+- Modules:
+	- User Management
+		- Database
+		- User Model / Data Model
+		- Athentification logic
+			- use data base
+			- secure data base
+	- Inventory Management
+		- Database
+		- Item Model
+	- Trip Management
+		- Database
+		- Trip Model
 
 
 ---
 ## Input Adlys
 1. WM-Logo oben links auf der Home-Website
 2. Jede Gruppe eigenes Gruppenbild (In Kluft)
-3. Termine auf der rechten Seite: Einfach immer die nächsten drei Veranstaltungen anzeigen anstatt nur "Keine Veranstaltungen gefunden"
+3. Termine auf der rechten Seite: Einfach immer die nächsten drei Veranstaltungen anzeigen
+anstatt nur "Keine Veranstaltungen gefunden"
 	- kalender wöchentlich (?)
 4. Kontakte: Eine Telefonnummer hinterlassen
 5. Bildergalerie?

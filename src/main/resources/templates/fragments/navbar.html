@@ -11,6 +11,22 @@
 					<a th:href="@{'/' + ${entry}}" th:text="${#strings.capitalize(entry)}"></a>
 				</li>
             </ul>
+            
+
+			<div th:switch="${#authentication}? ${#authorization.expression('isAuthenticated()')} : ${false}">
+			    <span th:case="${false}">
+			    	<form class="form-inline my-2 my-lg-0" action="/login">
+			    		<input class="btn btn-secondary my-2 my-sm-0 mr-2" type="submit" value="Login" />
+					</form>
+			    </span>
+			    <span th:case="${true}">
+			    	<form class="form-inline my-2 my-lg-0" action="/logout">
+			    		<input class="btn btn-secondary my-2 my-sm-0 mr-2" type="submit" value="Logout" />
+					</form>
+			    </span>
+			    <span th:case="*">Should never happen, but who knows...</span>
+			</div>
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -18,3 +34,5 @@
         </div>
 	</nav>
 </div>
+
+
