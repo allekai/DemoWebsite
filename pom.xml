@@ -47,6 +47,31 @@
 		</dependency>
 		
 		<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-core</artifactId>
+		</dependency>
+		<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-ldap</artifactId>
+		</dependency>
+		<dependency>
+				<groupId>com.unboundid</groupId>
+				<artifactId>unboundid-ldapsdk</artifactId>
+		</dependency>
+		<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-test</artifactId>
+				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>org.junit.vintage</groupId>
+						<artifactId>junit-vintage-engine</artifactId>
+					</exclusion>
+				</exclusions>
+		</dependency>
+		
+		
+		<dependency>
 		  	<groupId>org.springframework.security</groupId>
 		  	<artifactId>spring-security-test</artifactId>
 		  	<scope>test</scope>
@@ -65,12 +90,31 @@
 		</dependency>
 
 		<dependency>
+    		<groupId>org.keycloak</groupId>
+    		<artifactId>keycloak-spring-boot-starter</artifactId>
+		</dependency>
+		
+		
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.12</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	
+	<dependencyManagement>
+    	<dependencies>
+        	<dependency>
+            	<groupId>org.keycloak.bom</groupId>
+            	<artifactId>keycloak-adapter-bom</artifactId>
+            	<version>9.0.2</version>
+            	<type>pom</type>
+            	<scope>import</scope>
+        	</dependency>
+   	 	</dependencies>
+	</dependencyManagement>
+	
 
 	<build>
 		<plugins>

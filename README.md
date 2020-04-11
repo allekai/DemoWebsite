@@ -19,6 +19,7 @@ ToDo:
 	- ~~Add WM Logo [1]~~
 		- Name, Age, Mail adress, Phone Number, etc. [4]
 - **Proper and secure handling of requests**
+	- Find out how to store user information securely
 - Add cards as links to subpages
 	- for groups
 		- image of group in scout uniform [2]
@@ -39,15 +40,19 @@ ToDo:
 	- User Management
 		- Database
 		- User Model / Data Model
-		- Athentification logic
+		- Authentication logic
 			- use data base
 			- secure data base
 	- Inventory Management
 		- Database
 		- Item Model
+		- for GeWa and Kitchen
 	- Trip Management
 		- Database
 		- Trip Model
+		- User Registration
+			- Only for treasurer: should be able to tick off "Registration" and "Payment"
+		- Kitchen should be provided with convenience functions for calculating the grocery list
 
 
 ---
