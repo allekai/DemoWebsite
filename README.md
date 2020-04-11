@@ -29,13 +29,13 @@ ToDo:
 
 - Add Google Map API Stuff
 - Make landing page one of those scroll for content types
-	-         Maybe with parallax effect?
+	- Maybe with parallax effect?
 - Calendar function
 	- fixes [3]
 	- calendar export
 	- calendar sync
 - Image gallery
-	-         fixes [5]
+	- fixes [5]
 - Modules:
 	- User Management
 		- Database
